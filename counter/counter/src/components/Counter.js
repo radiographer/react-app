@@ -4,7 +4,7 @@ function Counter({ defaultValue = 0, step = 1 }) {
   const [value, setValue] = useState(defaultValue);
 
   useEffect(() => {
-    console.log();
+    console.log("useEffect");
   });
 
   const onMinus = (e) => {
