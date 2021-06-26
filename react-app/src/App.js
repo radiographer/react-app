@@ -1,5 +1,10 @@
+import React from "react";
+
 import ListaPostaci from "./components/ListaPostaci";
 import "./App.css";
+
+import Slider, { Range } from "rc-slider";
+import "rc-slider/assets/index.css";
 
 const postaci = {
   info: {
@@ -575,6 +580,9 @@ function App() {
   return (
     <div className="App">
       <h1>Nasza pierwsza Apka w React</h1>
+      <Slider />
+      <Range defaultValue={[10, 20]} />
+
       <ListaPostaci postaci={postaci} ilosc={5} />
     </div>
   );
